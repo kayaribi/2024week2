@@ -1,0 +1,223 @@
+.base-width {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+
+.container {
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	h1 {
+		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 215px;
+		height: 40px;
+		text-indent: -9999px;
+	}
+
+	.logo {
+		width: 215px;
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 79px;
+
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 60px;
+			margin: 10px 0 8px 0;
+		}
+
+		.tab {
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: 600;
+			color: #3F5D45;
+			padding: 10px;
+		}
+
+		.tab:hover {
+			transition-duration: 0.5s;
+			color: rgba(120, 156, 127, 0.599);
+		}
+
+		.shopping_cart {
+			margin: 9px 0 7px 0;
+		}
+
+	}
+}
+
+.banner {
+	margin: 0 auto 60px auto;
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+	.left {
+		width: 300px;
+		text-align: center;
+
+		.sub {
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 40px;
+			display: block;
+			padding: 16px 0;
+			letter-spacing: 0px;
+			text-align: center;
+			color: #3F5D45;
+			border-left: 1px solid #EAF0ED;
+			border-right: 1px solid #EAF0ED;
+			border-bottom: 1px solid #EAF0ED;
+		}
+
+		a:hover {
+			transition-duration: 0.5s;
+			background: #EAF0ED;
+		}
+
+		.title {
+			color: #EAF0ED;
+			background: #3F5D45;
+		}
+	}
+
+	.right {
+		width: 620px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+
+	}
+
+	section {
+		width: 300px;
+		position: relative;
+	}
+
+
+	section::before {
+		position: absolute;
+		content: "本日精選";
+		top: 0;
+		left: 20px;
+		width: 36px;
+		height: 107px;
+		background: #3F5D45;
+		color: #EAF0ED;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 600;
+		text-align: center;
+		padding: 10px;
+	}
+
+	section::after {
+		position: absolute;
+		content: "本日精選";
+		top: 0;
+		left: 20px;
+		width: 36px;
+		height: 107px;
+		background: #3F5D45;
+		color: #EAF0ED;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 600;
+		text-align: center;
+		padding: 10px;
+	}
+
+
+
+
+	.product {
+		display: inline-block;
+	}
+
+	.product-price {
+		display: flex;
+		justify-content: space-between;
+
+		.product-left {
+			font-size: 20px;
+			font-weight: 300;
+			color: #3F5D45;
+			padding: 14px 31px;
+			border-left: 1px solid #EAF0ED;
+			border-right: 1px solid #EAF0ED;
+		}
+
+		.product-right {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24px;
+			color: #3F5D45;
+			padding: 14px 28px 14px 25px;
+			border-right: 1px solid #EAF0ED;
+		}
+	}
+
+	.add-shopping-cart {
+		display: block;
+		padding: 16px 90px;
+		font-size: 24px;
+		line-height: 20px;
+		color: #3F5D45;
+		background: #EAF0ED;
+		text-align: center;
+	}
+
+	.add-shopping-cart:hover {
+		transition-duration: 0.5s;
+		color: #EAF0ED;
+		background: #3F5D45;
+	}
+
+
+}
+
+.btn {
+	display: flex;
+	justify-content: flex-end;
+
+	.btn-content {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #EAF0ED;
+		border-bottom: 1px solid #EAF0ED;
+		border-left: 1px solid #EAF0ED;
+
+		a {
+			width: 60px;
+			height: 60px;
+			display: block;
+			font-size: 20px;
+			text-align: center;
+			font-weight: 600;
+			color: #EAF0ED;
+			padding: 18px;
+			border-right: 1px solid;
+		}
+
+		.page:hover {
+			transition-duration: 0.5s;
+			color: #EAF0ED;
+			background: #3F5D45;
+		}
+
+	}
+
+}

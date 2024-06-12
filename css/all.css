@@ -163,22 +163,12 @@ a {
   width: 300px;
   position: relative;
 }
-.main-content section::before {
+.main-content section .heart {
   position: absolute;
-  content: "本日精選";
-  top: 0;
-  left: 20px;
-  width: 36px;
-  height: 107px;
-  background: #3F5D45;
-  color: #EAF0ED;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  text-align: center;
-  padding: 10px;
+  top: 19px;
+  right: 22px;
 }
-.main-content section::after {
+.main-content section::before {
   position: absolute;
   content: "本日精選";
   top: 0;

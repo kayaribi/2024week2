@@ -1,10 +1,10 @@
-.base-width {
+.container {
 	max-width: 940px;
 	margin: 0 auto;
 }
 
 
-.container {
+.header {
 	margin: 30px auto;
 	display: flex;
 	justify-content: space-between;
@@ -87,13 +87,21 @@
 			background: #EAF0ED;
 		}
 
-		.title {
-			color: #EAF0ED;
-			background: #3F5D45;
-		}
+
 	}
 
-	.right {
+	.title {
+		color: #EAF0ED;
+		background: #3F5D45;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 40px;
+		padding: 16px 0;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	.product-list {
 		width: 620px;
 		display: flex;
 		flex-wrap: wrap;
@@ -101,7 +109,7 @@
 
 	}
 
-	section {
+	.product {
 		width: 300px;
 		position: relative;
 
@@ -113,7 +121,7 @@
 	}
 
 
-	section::before {
+	li::before {
 		position: absolute;
 		content: "本日精選";
 		top: 0;
@@ -129,31 +137,31 @@
 		padding: 10px;
 	}
 
-
-	.product {
-		display: inline-block;
-	}
-
-	.product-price {
+	.product-info {
 		display: flex;
-		justify-content: space-between;
+		align-items: center;
+		border-left: 1px solid #EAF0ED;
+		border-right: 1px solid #EAF0ED;
 
-		.product-left {
+		.product-title {
+			width: 173px;
+			text-align: center;
 			font-size: 20px;
 			font-weight: 300;
+			line-height: 28px;
 			color: #3F5D45;
-			padding: 14px 31px;
-			border-left: 1px solid #EAF0ED;
+			padding: 14px 33px;
 			border-right: 1px solid #EAF0ED;
 		}
 
-		.product-right {
+		.product-price {
+			width: 127px;
 			font-size: 20px;
 			font-weight: 600;
-			line-height: 24px;
+			line-height: 28px;
 			color: #3F5D45;
-			padding: 14px 28px 14px 25px;
-			border-right: 1px solid #EAF0ED;
+			text-align: center;
+			padding: 14px 20px 14px 25px;
 		}
 	}
 
@@ -179,11 +187,8 @@
 .btn {
 	display: flex;
 	justify-content: flex-end;
-
 	.btn-content {
-		width: 300px;
 		display: flex;
-		justify-content: space-between;
 		border-top: 1px solid #EAF0ED;
 		border-bottom: 1px solid #EAF0ED;
 		border-left: 1px solid #EAF0ED;

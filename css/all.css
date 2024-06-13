@@ -71,18 +71,18 @@ a {
   text-decoration: none;
 }
 
-.base-width {
+.container {
   max-width: 940px;
   margin: 0 auto;
 }
 
-.container {
+.header {
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container h1 {
+.header h1 {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -90,32 +90,32 @@ a {
   height: 40px;
   text-indent: -9999px;
 }
-.container .logo {
+.header .logo {
   width: 215px;
 }
-.container nav {
+.header nav {
   display: flex;
   align-items: center;
   gap: 79px;
 }
-.container nav ul {
+.header nav ul {
   display: flex;
   align-items: center;
   gap: 60px;
   margin: 10px 0 8px 0;
 }
-.container nav .tab {
+.header nav .tab {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
   color: #3F5D45;
   padding: 10px;
 }
-.container nav .tab:hover {
+.header nav .tab:hover {
   transition-duration: 0.5s;
   color: rgba(120, 156, 127, 0.599);
 }
-.container nav .shopping_cart {
+.header nav .shopping_cart {
   margin: 9px 0 7px 0;
 }
 
@@ -149,26 +149,32 @@ a {
   transition-duration: 0.5s;
   background: #EAF0ED;
 }
-.main-content .left .title {
+.main-content .title {
   color: #EAF0ED;
   background: #3F5D45;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  padding: 16px 0;
+  letter-spacing: 0px;
+  text-align: center;
 }
-.main-content .right {
+.main-content .product-list {
   width: 620px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.main-content section {
+.main-content .product {
   width: 300px;
   position: relative;
 }
-.main-content section .heart {
+.main-content .product .heart {
   position: absolute;
   top: 19px;
   right: 22px;
 }
-.main-content section::before {
+.main-content li::before {
   position: absolute;
   content: "本日精選";
   top: 0;
@@ -183,28 +189,30 @@ a {
   text-align: center;
   padding: 10px;
 }
-.main-content .product {
-  display: inline-block;
-}
-.main-content .product-price {
+.main-content .product-info {
   display: flex;
-  justify-content: space-between;
-}
-.main-content .product-price .product-left {
-  font-size: 20px;
-  font-weight: 300;
-  color: #3F5D45;
-  padding: 14px 31px;
+  align-items: center;
   border-left: 1px solid #EAF0ED;
   border-right: 1px solid #EAF0ED;
 }
-.main-content .product-price .product-right {
+.main-content .product-info .product-title {
+  width: 173px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #3F5D45;
+  padding: 14px 33px;
+  border-right: 1px solid #EAF0ED;
+}
+.main-content .product-info .product-price {
+  width: 127px;
   font-size: 20px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 28px;
   color: #3F5D45;
-  padding: 14px 28px 14px 25px;
-  border-right: 1px solid #EAF0ED;
+  text-align: center;
+  padding: 14px 20px 14px 25px;
 }
 .main-content .add-shopping-cart {
   display: block;
@@ -226,9 +234,7 @@ a {
   justify-content: flex-end;
 }
 .btn .btn-content {
-  width: 300px;
   display: flex;
-  justify-content: space-between;
   border-top: 1px solid #EAF0ED;
   border-bottom: 1px solid #EAF0ED;
   border-left: 1px solid #EAF0ED;

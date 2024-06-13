@@ -232,6 +232,7 @@ a {
   border-top: 1px solid #EAF0ED;
   border-bottom: 1px solid #EAF0ED;
   border-left: 1px solid #EAF0ED;
+  margin-bottom: 60px;
 }
 .btn .btn-content a {
   width: 60px;

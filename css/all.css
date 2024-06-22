@@ -71,6 +71,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -216,12 +220,14 @@ a {
 }
 .main-content .add-shopping-cart {
   display: block;
+  font-weight: 600;
   padding: 16px 90px;
   font-size: 24px;
   line-height: 20px;
   color: #3F5D45;
   background: #EAF0ED;
   text-align: center;
+  cursor: pointer;
 }
 .main-content .add-shopping-cart:hover {
   transition-duration: 0.5s;
@@ -235,9 +241,6 @@ a {
 }
 .btn .btn-content {
   display: flex;
-  border-top: 1px solid #EAF0ED;
-  border-bottom: 1px solid #EAF0ED;
-  border-left: 1px solid #EAF0ED;
   margin-bottom: 60px;
 }
 .btn .btn-content a {
@@ -249,7 +252,12 @@ a {
   font-weight: 600;
   color: #3F5D45;
   padding: 18px;
-  border-right: 1px solid #EAF0ED;
+  border-top: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+}
+.btn .btn-content a:first-child {
+  border-left: 1px solid #eaf0ed;
 }
 .btn .btn-content .page:hover {
   transition-duration: 0.5s;

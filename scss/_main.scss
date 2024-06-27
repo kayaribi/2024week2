@@ -194,30 +194,30 @@
 		display: flex;
 		margin-bottom: 60px;
 
-		a {
-			width: 60px;
-			height: 60px;
-			display: block;
-			font-size: 20px;
-			text-align: center;
-			font-weight: 600;
-			color: #3F5D45;
-			padding: 18px;
-			border-top: 1px solid #eaf0ed;
-			border-bottom: 1px solid #eaf0ed;
-			border-right: 1px solid #eaf0ed;
-
-			&:first-child {
-				border-left: 1px solid #eaf0ed;
-			}
+		li:first-child {
+			border-left: 1px solid #eaf0ed;
 		}
 
-		.page:hover {
-			transition-duration: 0.5s;
-			color: #EAF0ED;
-			background: #3F5D45;
+			a {
+				width: 60px;
+				height: 60px;
+				display: block;
+				font-size: 20px;
+				text-align: center;
+				font-weight: 600;
+				color: #3F5D45;
+				padding: 18px;
+				border-top: 1px solid #eaf0ed;
+				border-bottom: 1px solid #eaf0ed;
+				border-right: 1px solid #eaf0ed;
+			}
+
+			.page:hover {
+				transition-duration: 0.5s;
+				color: #EAF0ED;
+				background: #3F5D45;
+			}
+
 		}
 
 	}
-
-}

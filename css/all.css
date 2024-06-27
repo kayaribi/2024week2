@@ -243,6 +243,9 @@ button {
   display: flex;
   margin-bottom: 60px;
 }
+.btn .btn-content li:first-child {
+  border-left: 1px solid #eaf0ed;
+}
 .btn .btn-content a {
   width: 60px;
   height: 60px;
@@ -255,9 +258,6 @@ button {
   border-top: 1px solid #eaf0ed;
   border-bottom: 1px solid #eaf0ed;
   border-right: 1px solid #eaf0ed;
-}
-.btn .btn-content a:first-child {
-  border-left: 1px solid #eaf0ed;
 }
 .btn .btn-content .page:hover {
   transition-duration: 0.5s;
